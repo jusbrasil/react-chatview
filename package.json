@@ -21,6 +21,7 @@
     "infinite"
   ],
   "dependencies": {
+    "create-react-class": "^15.6.3",
     "lodash.clone": "^3.0.0",
     "prop-types": "^15.6.2"
   },

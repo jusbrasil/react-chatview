@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import clone from 'lodash.clone';
 import PropTypes from 'prop-types';
+import createReactClass from 'create-react-class';
 
-var ChatView = React.createClass({
+var ChatView = createReactClass({
 
   propTypes: {
     domNode: PropTypes.object,
