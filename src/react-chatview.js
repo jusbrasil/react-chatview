@@ -14,6 +14,7 @@ var ChatView = createReactClass({
     loadingSpinnerDelegate: PropTypes.element,
     className: PropTypes.string,
     enableAutoScroll: PropTypes.bool,
+    style: PropTypes.object,
   },
 
   getDefaultProps () {
@@ -50,7 +51,7 @@ var ChatView = createReactClass({
     // Must not hook onScroll event directly - that will break hardware accelerated scrolling.
     // We poll it with requestAnimationFrame instead.
     return (
-      <div className={this.props.className} ref="scrollable">
+      <div className={this.props.className} ref="scrollable" style={this.props.style}>
         <div ref="smoothScrollingWrapper">
           {this.props.flipped ? loadSpinner : null}
           {displayables}
